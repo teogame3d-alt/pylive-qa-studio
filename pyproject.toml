@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pylive-qa-studio"
+version = "0.1.0"
+description = "Live Python diagnostics and QA-oriented developer feedback studio."
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [{ name = "Florin Teodor Rusu" }]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+pylive-qa = "pylive_qa_studio.cli:main"
+pylive-qa-demo = "pylive_qa_studio.web_demo:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+addopts = "-q"
+pythonpath = ["src"]
