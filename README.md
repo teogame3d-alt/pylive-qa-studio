@@ -2,7 +2,7 @@
 
 Portfolio project for live Python diagnostics, QA-oriented code feedback, and visual preview workflows.
 
-This project is built as a post-internship engineering showcase: it demonstrates how I think about code quality, debugging, testability, and clear developer feedback without hiding the logic inside a black box.
+This project is my developer-tooling prototype for code quality, debugging, testability, and clear Python feedback. The core behavior stays visible through deterministic rules, tests, and documentation.
 
 ![Python Live QA Studio overview](docs/images/demo-overview.png)
 
@@ -21,7 +21,7 @@ Instead of writing code, pressing Run, reading a traceback, and guessing the fix
 
 The first milestone is intentionally compact and deterministic. It proves the architecture before adding a full editor UI.
 
-## What This Demonstrates for Recruiters
+## What This Demonstrates Technically
 
 - Python package structure with `src/`, tests, docs, and CI.
 - QA mindset: diagnostics, edge cases, regression tests, and reproducible checks.

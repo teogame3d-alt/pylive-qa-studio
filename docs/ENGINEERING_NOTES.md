@@ -9,9 +9,9 @@ This project keeps the decision path visible: diagnostics are implemented as det
 - Keep suggestions tied to visible evidence.
 - Document the tradeoffs before expanding the feature.
 
-## Why This Is Better Than Black-Box Magic
+## Why This Stays Inspectable
 
-Recruiters and engineering teams can inspect:
+Reviewers and engineering teams can inspect:
 
 - what the analyzer checks;
 - what evidence it uses;

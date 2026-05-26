@@ -11,12 +11,12 @@ Python Live QA Studio is split into small components so each behavior can be tes
 - `PythonSnippetRunner`: executes snippets in a subprocess with timeout protection.
 - `redaction.py`: removes machine-specific paths and common secret patterns from demo output.
 - CLI: proves the core can be used before the full desktop interface exists.
-- Web demo: shows the same core behavior in a recruiter-friendly browser interface.
+- Web demo: shows the same core behavior in a review-friendly browser interface.
 
 ## Design Principles
 
 - Keep explanations evidence-based.
-- Prefer deterministic rules before AI-generated text.
+- Prefer deterministic rules before optional generated explanations.
 - Make every diagnostic testable.
 - Separate source analysis from execution.
 - Treat UI preview as an adapter, not as the core engine.

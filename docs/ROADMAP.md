@@ -25,16 +25,16 @@
 - Tkinter/PyQt6 project detection.
 - Style file detection and UI refresh experiments.
 
-## Milestone 4: AI-Assisted Explanations
+## Milestone 4: Optional Explanation Providers
 
-- Optional AI explanation provider.
+- Optional external explanation provider.
 - Deterministic fallback diagnostics.
-- Prompt templates and evaluation examples.
-- Human-readable review notes for generated suggestions.
+- Explanation templates and evaluation examples.
+- Human-readable review notes for suggested fixes.
 
 ## Milestone 5: Portfolio-Grade Demonstration
 
 - Screenshots.
 - Demo GIF.
 - Example projects.
-- Recruiter-focused README section.
+- Review-friendly README section.
