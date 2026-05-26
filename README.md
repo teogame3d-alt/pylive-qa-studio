@@ -29,6 +29,20 @@ The first milestone is intentionally compact and deterministic. It proves the ar
 - Product thinking: the tool predicts the developer's next need instead of only reporting errors.
 - Inspectable logic: diagnostics and predictions are implemented as deterministic rules with tests.
 
+## Proof of Work
+
+- Unit tests cover diagnostics, prediction rules, traceback explanation, privacy redaction, and runtime policy behavior.
+- The local browser demo uses the same analyzer, predictor, runner, and explainer modules used by tests.
+- The PyQt6 auto-close example documents a real timeout problem and how the runner handles short-lived UI previews.
+- Security/privacy notes explain what is redacted and what the MVP does not claim to solve.
+
+## Difficult Parts / Tradeoffs
+
+- Running arbitrary Python is risky, so the MVP keeps execution local, time-limited, and redacted instead of pretending to be a full sandbox.
+- GUI event loops do not naturally finish; the runner distinguishes short auto-closing examples from long-running apps.
+- The prediction layer is deterministic on purpose. It is less magical, but easier to test, explain, and improve safely.
+- Full IDE behavior is out of scope for now; the current goal is clearer feedback, not replacing VS Code or PyCharm.
+
 ## Current MVP Features
 
 - AST-based syntax and code-shape diagnostics.

@@ -1,6 +1,7 @@
 __pycache__/
 *.py[cod]
 .pytest_cache/
+.pytest_tmp/
 .mypy_cache/
 .ruff_cache/
 .venv/
@@ -34,5 +35,6 @@ private/
 *.sqlite3
 local_artifacts/
 private_artifacts/
+.DS_Store
 Thumbs.db
 desktop.ini
